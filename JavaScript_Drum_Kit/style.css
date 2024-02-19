@@ -1,1 +1,37 @@
+*{
+    box-sizing: border-box;
+    margin: 0 auto;
+    padding: 0;
+    color: azure;
+    font-family: Arial, Helvetica, sans-serif;
+}
 
+body{
+    background: url(Images/background.jpg) no-repeat center center fixed;
+    background-size: cover;
+}
+
+#title{
+    text-align: center;
+    padding: 2rem;
+}
+
+#container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    justify-items: center;
+    flex-wrap: wrap;
+    margin-top: 40vh;
+}
+
+.drum{
+    border: solid white 1px;
+    padding: 1rem;
+    background-color: rgba(128, 128, 128, 0.5);
+    border-radius: 5px;
+}
+
+.drum:hover{
+    border: solid white 2px;
+}
