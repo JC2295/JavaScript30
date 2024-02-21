@@ -23,6 +23,7 @@ body{
     justify-items: center;
     flex-wrap: wrap;
     margin-top: 40vh;
+    height: 4rem;
 }
 
 .drum{
@@ -30,6 +31,7 @@ body{
     padding: 1rem;
     background-color: rgba(128, 128, 128, 0.5);
     border-radius: 5px;
+    align-self: start;
 }
 
 .drum:hover{
