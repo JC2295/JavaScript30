@@ -13,12 +13,25 @@ let drumSounds = [
 
 let drums = document.querySelectorAll(".drum");
 
-function playDrum(){
-    let audio = new Audio(drumSounds[0]);
+for(let i = 0; i < drums.length; i++){
+    drums[i].addEventListener("click", () => playDrum(i));
+    drums[i].addEventListener("mousedown", () => highlight(i));
+    drums[i].addEventListener("mouseup", () => unhighlight(i));
+    // Will come back to this as I'm not sure exactly how it works.
+}
 
+function playDrum(i){
+    let audio = new Audio(drumSounds[i]);
     audio.play();
 };
 
-drums[0].addEventListener("click", playDrum);
+function highlight(i){
+    drums[i].classList.add("highlight"); // add a class
+}
+
+function unhighlight(i){
+    drums[i].classList.remove("highlight"); // remove a class
+}
+
 
 // js is linked to html

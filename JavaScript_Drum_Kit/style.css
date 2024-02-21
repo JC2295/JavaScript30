@@ -37,3 +37,7 @@ body{
 .drum:hover{
     border: solid white 2px;
 }
+
+.highlight{
+    background-color: yellow;
+}
