@@ -33,6 +33,7 @@ body{
 
 .hand{
     background-color: black;
+    aspect-ratio: 1 / 0.1;
 }
 
 .sec-hand{
@@ -42,10 +43,10 @@ body{
 
 .min-hand{
     z-index: 4;
-    
+    width: 45%
 }
 
 .hour-hand{
     z-index: 3;
-
+    width: 25%;
 }
