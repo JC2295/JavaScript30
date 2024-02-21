@@ -1,0 +1,51 @@
+*{
+    box-sizing: border-box;
+    margin: 0 auto;
+    padding: 0;
+    color: azure;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background-color: aquamarine;
+}
+
+.clock-face{
+    aspect-ratio: 1 / 1;
+}
+
+.outer-face{
+    margin-top: 5vh;
+    width: 25%;
+    background-color: darkolivegreen;
+    border-radius: 50%;
+    z-index: 0;
+    display: flex;
+    align-items: center;
+}
+
+.inner-face{
+    width: 90%;
+    background-color: aliceblue;
+    border-radius: 50%;
+    z-index: 2;
+}
+
+.hand{
+    background-color: black;
+}
+
+.sec-hand{
+    z-index: 5;
+    width: 50%;
+}
+
+.min-hand{
+    z-index: 4;
+    
+}
+
+.hour-hand{
+    z-index: 3;
+
+}
