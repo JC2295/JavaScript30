@@ -14,7 +14,7 @@ let drumSounds = [
 let drums = document.querySelectorAll(".drum");
 
 for(let i = 0; i < drums.length; i++){
-    drums[i].addEventListener("click", () => playDrum(i));
+    drums[i].addEventListener("mousedown", () => playDrum(i));
     drums[i].addEventListener("mousedown", () => highlight(i));
     drums[i].addEventListener("mouseup", () => unhighlight(i));
     // Will come back to this as I'm not sure exactly how it works.
