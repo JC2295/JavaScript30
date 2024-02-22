@@ -1,3 +1,10 @@
+
+:root{
+    --secDeg: 0deg;
+    --minDeg: 0deg;
+    --hourDeg: 0deg;
+}
+
 *{
     box-sizing: border-box;
     margin: 0 auto;
@@ -44,7 +51,7 @@ body{
 .sec-hand{
     z-index: 5;
     width: 50%;
-    transform: translate(0, -50%) rotate(0deg);
+    transform: translate(0, -50%) rotate(var(--secDeg));
 }
 
 /*
@@ -56,7 +63,7 @@ system.
 .min-hand{
     z-index: 4;
     width: 45%;
-    transform: translate(0, -50%) rotate(0deg);
+    transform: translate(0, -50%) rotate(var(--minDeg));
 }
 
 /*It rotating clockwise starting from 3 oclock*/
@@ -64,7 +71,7 @@ system.
 .hour-hand{
     z-index: 3;
     width: 25%;
-    transform: translate(0, -50%) rotate(0deg);
+    transform: translate(0, -50%) rotate(var(--hourDeg));
     aspect-ratio: 1/ 0.2;
 }
 
