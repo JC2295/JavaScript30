@@ -8,9 +8,9 @@ const secDeg = ((360/60) * seconds) - 90;
 
 const minutes = new Date(timeElapsed).getMinutes();
 
-const minDeg = ((360/3600) * seconds) - 90;
+const minDeg = ((360/3600) * seconds) - 90; // keeps resettinng back after min past.
 
-const hours = new Date(timeElapsed).getHours();
+const hours = new Date(timeElapsed).getHours(); // same issue with hours as a result.
 
 const hourDeg = ((360/43200) * seconds) - 90;
 
