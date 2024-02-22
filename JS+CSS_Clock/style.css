@@ -28,25 +28,48 @@ body{
     width: 90%;
     background-color: aliceblue;
     border-radius: 50%;
+    position: relative;
     z-index: 2;
 }
 
 .hand{
     background-color: black;
     aspect-ratio: 1 / 0.1;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform-origin: left center;
 }
 
 .sec-hand{
     z-index: 5;
     width: 50%;
+    transform: translate(0, -50%) rotate(270deg);
 }
+
+/*
+The translate and rotate transforms need to be chained prooperly
+otherwise they wil offset the center due to changes in the coordinate
+system.
+*/
 
 .min-hand{
     z-index: 4;
-    width: 45%
+    width: 45%;
+    transform: translate(0, -50%) rotate(180deg);
+
 }
 
 .hour-hand{
     z-index: 3;
     width: 25%;
+    transform: translate(0, -50%) rotate(0deg);
+}
+
+.pivot{
+    aspect-ratio: 1 / 1;
+    transform: translate(-50%, -50%);
+    z-index: 4;
+    width: 8%;
+    border-radius: 50%;
 }
