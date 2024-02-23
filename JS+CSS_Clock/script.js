@@ -24,7 +24,11 @@ root.style.setProperty('--secDeg', secDeg + "deg");
 root.style.setProperty('--minDeg', minDeg + "deg");
 root.style.setProperty('--hourDeg', hourDeg + "deg");
 
-test.innerText = `${hours}:${minutes}:${seconds}`;
+let fseconds = String(seconds).padStart(2, "0");
+let fminutes = String(minutes).padStart(2, "0");
+let fhours = String(hours).padStart(2, "0");
+
+test.innerText = `${fhours}:${fminutes}:${fseconds}`;
 
 
 
