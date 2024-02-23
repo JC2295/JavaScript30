@@ -22,12 +22,10 @@ h1{
 
 .container{
     margin: 1rem auto;
-    width: 50%;
     min-width: 200px;
     max-width: 600px;
     background-color: aliceblue;
     border: solid black 1px;
-    border-radius: 5%;
     height: auto; 
     display: flex;
     flex-direction: column;
@@ -37,14 +35,13 @@ h1{
 .img-container{
     width: 100%;
     height: auto;
-    padding: var(--space-value);
-    background-color: var(--color-value);
 }
 
 img{
     width: 100%;
-    height: auto;
     filter: blur(var(--blur-value));
+    padding: var(--space-value);
+    background-color: var(--color-value);
 }
 
 .input-container{

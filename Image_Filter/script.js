@@ -23,7 +23,9 @@ function updateBlur(){
 
     let blurValue = blurInput.value;
 
-    root.style.setProperty("--blur-value", blurValue);
+    alert(blurValue);
+
+    root.style.setProperty("--blur-value", `${blurValue}px`);
 
 }
 
@@ -35,10 +37,15 @@ function updateSpacing(){
 
     let spacingValue = spacingInput.value;
 
-    root.style.setProperty("--spacing-value", spacingValue); 
+    alert(spacingValue);
+
+    root.style.setProperty("--space-value", `${spacingValue}px`); 
 
 }
 
+// Important: Be consistant with variable names!!!!
+
+// Come back and refactor this code to use node list
 
 /*
 
