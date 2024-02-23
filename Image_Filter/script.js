@@ -1,4 +1,7 @@
 //Variable declaration and retreival from inputs
+let root = document.documentElement;
+
+function update() {
 
 let colorInput = document.querySelector("#color");
 
@@ -20,3 +23,7 @@ let spacingInput = document.querySelector("#spacing");
 let spacingValue = spacingInput.getAttribute("value");
 
 root.style.setProperty("--spacing-value", blurValue); 
+
+}
+
+setInterval(update, 200);

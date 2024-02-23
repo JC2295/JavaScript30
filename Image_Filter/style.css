@@ -1,7 +1,7 @@
 :root{
     --blur-value: 0;
     --space-value: 0;          /* These are base variables that can be changed.*/
-    --color-value: blue;
+    --color-value: #0000FF;
 }
 
 
