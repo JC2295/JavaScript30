@@ -1,6 +1,6 @@
 :root{
-    --blur-value: 0;
-    --space-value: 0;          /* These are base variables that can be changed.*/
+    --blur-value: 0px;
+    --space-value: 0px;          /* These are base variables that can be changed.*/
     --color-value: #0000FF;
 }
 
