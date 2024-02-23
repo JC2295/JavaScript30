@@ -52,5 +52,3 @@ Since this is a property you can simply use .value to retreive the current value
 
 
 /*
-
-
