@@ -16,8 +16,6 @@ const hourDeg = ((360/43200) * seconds) - 90 + ((360/12) * hours);
 
 let test = document.querySelector("#test");
 
-test.innerText = Date(timeElapsed);
-
 // Get the root element
 
 let root = document.documentElement;
@@ -25,6 +23,10 @@ let root = document.documentElement;
 root.style.setProperty('--secDeg', secDeg + "deg");
 root.style.setProperty('--minDeg', minDeg + "deg");
 root.style.setProperty('--hourDeg', hourDeg + "deg");
+
+test.innerText = `${hours}:${minutes}:${seconds}`;
+
+
 
 }
 

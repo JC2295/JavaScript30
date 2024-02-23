@@ -84,6 +84,10 @@ system.
 }
 
 p{
-    border: solid red 5px;
+    border: solid darkolivegreen 5px;
     color: black;
+    text-align: center;
+    margin: 1rem;
+    padding: 1rem;
+    font-size: 4rem;
 }
