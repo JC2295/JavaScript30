@@ -22,8 +22,6 @@ test.innerText = Date(timeElapsed);
 
 let root = document.documentElement;
 
-
-
 root.style.setProperty('--secDeg', secDeg + "deg");
 root.style.setProperty('--minDeg', minDeg + "deg");
 root.style.setProperty('--hourDeg', hourDeg + "deg");

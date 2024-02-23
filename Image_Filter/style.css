@@ -1,0 +1,55 @@
+:root{
+    --blur-value: 0;
+    --space-value: 0;          /* These are base variables that can be changed.*/
+    --color-value: blue;
+}
+
+
+*{
+    box-sizing: border-box;
+    margin: 0 auto;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background-color: aquamarine;
+}
+
+h1{
+    text-align: center;
+}
+
+.container{
+    margin: 1rem auto;
+    width: 50%;
+    min-width: 200px;
+    max-width: 600px;
+    background-color: aliceblue;
+    border: solid black 1px;
+    border-radius: 5%;
+    height: auto;
+    min-height: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.img-container{
+    width: 100%;
+    height: auto;
+    padding: var(--space-value);
+    background-color: var(--color-value);
+}
+
+img{
+    width: 100%;
+    height: auto;
+    filter: blur(var(--blur-value));
+}
+
+.input-container{
+    display:grid;
+    grid-template-columns: max-content;
+    grid-gap: 1rem;
+}
