@@ -30,9 +30,6 @@ let fhours = String(hours).padStart(2, "0");
 
 test.innerText = `${fhours}:${fminutes}:${fseconds}`;
 
-
-
 }
-
 
 setInterval(updateClock, 1000);
