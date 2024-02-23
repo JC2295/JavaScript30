@@ -9,8 +9,6 @@ function updateColor(){
 
     let colorValue = colorInput.value;
 
-    alert(colorValue);
-
     root.style.setProperty("--color-value", colorValue); 
 
 }
@@ -23,8 +21,6 @@ function updateBlur(){
 
     let blurValue = blurInput.value;
 
-    alert(blurValue);
-
     root.style.setProperty("--blur-value", `${blurValue}px`);
 
 }
@@ -36,8 +32,6 @@ spacingInput.addEventListener("change", updateSpacing);
 function updateSpacing(){
 
     let spacingValue = spacingInput.value;
-
-    alert(spacingValue);
 
     root.style.setProperty("--space-value", `${spacingValue}px`); 
 
