@@ -39,7 +39,12 @@
 
     // Array.prototype.map()
     // 2. Give us an array of the inventors first and last names
-    //let mappedNames =  inventors.map
+    let mappedNames =  inventors.map(function(mapped){
+      let fullName = `${mapped.first} ${mapped.last}`;
+      return fullName;
+    });
+
+    console.log(mappedNames);
 
     // Array.prototype.sort()
     // 3. Sort the inventors by birthdate, oldest to youngest
