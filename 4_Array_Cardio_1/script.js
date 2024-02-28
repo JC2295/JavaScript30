@@ -61,6 +61,9 @@
 
     // 7. sort Exercise
     // Sort the people alphabetically by last name
+      //let peopleSort = people.sort();
+
+      //console.log(peopleSort);
 
     // 8. Reduce Exercise
     // Sum up the instances of each of these
