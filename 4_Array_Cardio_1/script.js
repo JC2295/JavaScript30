@@ -58,6 +58,8 @@
 
     // Array.prototype.reduce()
     // 4. How many years did all the inventors live all together?
+    //inventors.reduce((previousValue, currentValue) => (previousValue.)
+
 
     // 5. Sort the inventors by years lived
     inventors.sort((a, b) => (a.passed - a.year) - (b.passed - b.year));
@@ -71,6 +73,7 @@
 
     // 7. sort Exercise
     // Sort the people alphabetically by last name
+   
       
 
     // 8. Reduce Exercise
